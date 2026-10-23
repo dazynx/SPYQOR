@@ -1,299 +1,136 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090b16">
-<meta name="description" content="SPYQOR Creator Studio — YouTube ideas, titles, thumbnails, hooks, SEO and creator planning.">
-<title>SPYQOR Creator Studio — Create Smarter</title>
-<style>
-:root{--bg:#080a13;--panel:#111421;--panel2:#151a2b;--line:#252b40;--text:#f5f7ff;--muted:#929bb6;--cyan:#66f5e7;--purple:#9b82ff;--pink:#ff78bf;--lime:#c5ff79}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% -10%,#25204d 0,transparent 38%),radial-gradient(ellipse at 100% 25%,#12313a 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}a{color:inherit;text-decoration:none}.app{display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.sidebar{border-right:1px solid var(--line);padding:24px 16px;background:#0b0d17ed;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:26px}.brand{display:flex;align-items:center;gap:11px;padding:0 9px}.brandmark{width:42px;height:42px;border-radius:14px;background:linear-gradient(140deg,var(--cyan),var(--purple) 55%,var(--pink));display:grid;place-items:center;color:#090b16;font-weight:1000;font-size:19px}.brandname{font-weight:950;letter-spacing:.12em;font-size:17px}.brandname small{display:block;color:var(--muted);font-size:9px;letter-spacing:.2em;margin-top:3px}.navlabel{font-size:10px;letter-spacing:.16em;color:#69728d;font-weight:900;padding:0 12px;margin-bottom:-13px}.nav{display:grid;gap:6px}.nav button{border:1px solid transparent;background:transparent;color:#aab2c9;text-align:left;padding:12px;border-radius:12px;display:flex;gap:12px;align-items:center;font-weight:700;font-size:13px}.nav button:hover,.nav button.active{background:linear-gradient(100deg,#9b82ff20,#66f5e710);border-color:#3b3658;color:#fff}.nav .ico{width:20px;text-align:center;font-size:16px}.sidebottom{margin-top:auto;border:1px solid var(--line);background:linear-gradient(145deg,#15172b,#111521);padding:15px;border-radius:16px}.sidebottom strong{font-size:12px}.sidebottom p{font-size:11px;color:var(--muted);line-height:1.6}.sidebottom button{width:100%;border:0;background:#252943;color:white;border-radius:10px;padding:10px;font-size:11px;font-weight:800}.main{min-width:0;padding:25px clamp(16px,3vw,42px) 50px;max-width:1500px;width:100%;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:27px}.crumb{font-size:12px;color:var(--muted)}.crumb b{color:#fff}.topright{display:flex;align-items:center;gap:10px}.status{border:1px solid #2d514d;background:#102522;color:var(--cyan);font-size:10px;font-weight:900;padding:8px 11px;border-radius:999px}.avatar{width:36px;height:36px;border-radius:12px;background:#25263d;display:grid;place-items:center;font-weight:900}.view{display:none}.view.active{display:block;animation:appear .25s ease}@keyframes appear{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}.hero{border:1px solid #34304e;border-radius:25px;padding:clamp(22px,4vw,40px);background:linear-gradient(120deg,#211d3e 0%,#151a2d 53%,#10272b 100%);position:relative;overflow:hidden}.hero:after{content:"✳";position:absolute;right:5%;top:-40px;font-size:230px;color:#ffffff07;pointer-events:none}.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:10px;font-weight:900;letter-spacing:.16em;color:var(--cyan);background:#66f5e710;border:1px solid #66f5e72b;border-radius:999px;padding:8px 11px}.hero h1{font-size:clamp(35px,5vw,60px);line-height:1.02;letter-spacing:-.055em;margin:20px 0 12px;max-width:700px}.gradient{background:linear-gradient(90deg,var(--cyan),#c4a7ff 60%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:#b1b7cf;line-height:1.7;font-size:14px;max-width:660px;margin:0}.heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{border:1px solid #ffffff20;background:linear-gradient(110deg,#9b82ff,#6b62db);color:white;padding:12px 16px;border-radius:12px;font-size:12px;font-weight:900;box-shadow:0 8px 25px #7762e425}.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.btn.secondary{background:#ffffff08;box-shadow:none}.btn.mint{background:linear-gradient(110deg,#66f5e7,#b7f99c);color:#091312}.btn.danger{background:#3a1825;border-color:#713044;color:#ffb9ce;box-shadow:none}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:17px 0 30px}.stat,.card{background:linear-gradient(145deg,#141827,#10131f);border:1px solid var(--line);border-radius:17px}.stat{padding:17px}.stat .top{display:flex;justify-content:space-between;color:var(--muted);font-size:11px}.stat strong{display:block;font-size:28px;margin:11px 0 4px;letter-spacing:-.04em}.stat small{font-size:10px;color:#9de8c5}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:31px 0 15px}.sectionhead h2{font-size:21px;margin:0 0 6px;letter-spacing:-.035em}.sectionhead p{font-size:12px;color:var(--muted);margin:0;line-height:1.5}.textlink{color:var(--cyan);font-size:11px;font-weight:900;border:0;background:none}.quickgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.quick{padding:18px;min-height:160px;position:relative;overflow:hidden}.quick .qico{width:38px;height:38px;border-radius:12px;background:#9b82ff18;border:1px solid #9b82ff30;display:grid;place-items:center;font-size:18px;margin-bottom:18px}.quick h3{font-size:14px;margin:0 0 7px}.quick p{font-size:11px;color:var(--muted);line-height:1.6;margin:0 0 15px}.quick button{border:0;background:none;color:var(--cyan);padding:0;font-size:11px;font-weight:900}.generator-layout{display:grid;grid-template-columns:minmax(260px,.75fr) minmax(0,1.25fr);gap:15px;align-items:start}.cardpad{padding:21px}.cardtitle{font-size:14px;font-weight:900;margin:0 0 5px}.sub{font-size:11px;color:var(--muted);line-height:1.6;margin:0 0 18px}.field{display:grid;gap:7px;margin:14px 0}.field label{font-size:11px;font-weight:800;color:#c8cee0}.field input,.field select,.field textarea{width:100%;min-width:0;background:#0a0d17;color:#f4f6ff;border:1px solid #2b3046;border-radius:11px;padding:12px;outline:none}.field textarea{min-height:85px;resize:vertical}.field .hint{font-size:10px;color:#717b98}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--purple);box-shadow:0 0 0 3px #9b82ff18}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.results{display:grid;gap:10px}.resulthead{display:flex;justify-content:space-between;align-items:center;gap:10px}.resulthead h3{font-size:14px;margin:0}.resulthead span{font-size:10px;color:var(--muted)}.resultlist{display:grid;gap:9px;margin-top:13px}.resultitem{padding:14px;border:1px solid #292f45;border-radius:13px;background:#0d101b;min-width:0}.resultitem .number{font-size:9px;color:var(--cyan);font-weight:900;letter-spacing:.1em}.resultitem p{font-size:13px;line-height:1.55;margin:7px 0 12px;overflow-wrap:anywhere}.itemactions{display:flex;gap:7px;flex-wrap:wrap}.mini{font-size:10px;border:1px solid #30364d;background:#171b2b;color:#cbd2e7;border-radius:8px;padding:7px 9px}.mini:hover{border-color:#7165a9;color:white}.taglist{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tag{border:1px solid #34304e;border-radius:8px;padding:7px 9px;font-size:10px;color:#c4bbff;background:#9b82ff0d}.thumbgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin-top:12px}.thumb{aspect-ratio:16/9;border-radius:13px;border:1px solid #34304e;padding:13px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;background:radial-gradient(circle at 85% 20%,#9b82ff77,transparent 34%),linear-gradient(135deg,#252144,#111624 65%,#0e2b2d);position:relative}.thumb:nth-child(2){background:radial-gradient(circle at 85% 20%,#ff78bf77,transparent 34%),linear-gradient(135deg,#422039,#171624 65%,#2b2117)}.thumb:nth-child(3){background:radial-gradient(circle at 85% 20%,#66f5e777,transparent 34%),linear-gradient(135deg,#163c3b,#121624 65%,#282044)}.thumb:nth-child(4){background:radial-gradient(circle at 85% 20%,#c5ff7977,transparent 34%),linear-gradient(135deg,#2b3b23,#151925 65%,#252044)}.thumb small{font-size:8px;letter-spacing:.16em;font-weight:1000;color:#e4e8ff}.thumb strong{font-size:clamp(15px,2vw,24px);line-height:1.02;text-transform:uppercase;max-width:88%;text-shadow:0 3px 10px #000}.thumb em{font-size:9px;font-style:normal;color:#d7d9ed}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:13px}.idea-row{display:flex;align-items:start;gap:12px;padding:14px 0;border-bottom:1px solid #252a3d}.idea-row:last-child{border-bottom:0}.day{flex:0 0 40px;height:42px;border-radius:11px;background:#9b82ff18;display:grid;place-items:center;font-size:10px;color:#c4bbff;font-weight:900}.idea-row strong{font-size:12px;display:block;margin-bottom:5px}.idea-row p{font-size:11px;color:var(--muted);line-height:1.5;margin:0}.savedempty{padding:30px;text-align:center;color:var(--muted);font-size:12px;line-height:1.7}.notice{border:1px solid #5a4a2a;background:#2a2112;color:#e9cf9a;padding:12px 14px;border-radius:12px;font-size:10px;line-height:1.6;margin-top:16px}.footer{padding-top:28px;margin-top:35px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;color:#69728d;font-size:10px}.toast{position:fixed;right:20px;bottom:20px;background:#e5fff7;color:#081411;padding:12px 16px;border-radius:12px;font-size:12px;font-weight:900;box-shadow:0 12px 40px #0008;transform:translateY(120px);opacity:0;transition:.25s;z-index:50;max-width:calc(100vw - 40px)}.toast.show{transform:none;opacity:1}.mobilehead{display:none}.muted{color:var(--muted)}.checkrow{display:flex;align-items:center;gap:9px;color:#c8cee0;font-size:11px;margin:12px 0}.checkrow input{accent-color:var(--purple)}
-@media(max-width:1000px){.app{grid-template-columns:205px minmax(0,1fr)}.quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.generator-layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){.app{display:block}.sidebar{position:fixed;z-index:20;top:auto;bottom:0;left:0;right:0;width:100%;height:auto;padding:7px 8px calc(7px + env(safe-area-inset-bottom));border-right:0;border-top:1px solid var(--line);background:#0b0d17f5;display:block}.brand,.navlabel,.sidebottom{display:none}.nav{display:flex;justify-content:space-around;gap:2px}.nav button{flex:1;display:flex;flex-direction:column;gap:4px;padding:8px 2px;font-size:9px;text-align:center;border-radius:10px}.nav .ico{font-size:17px}.main{padding:18px 13px 100px}.topbar{margin-bottom:16px}.crumb{font-size:10px}.status{font-size:9px;padding:7px}.hero{padding:23px 19px}.hero h1{font-size:39px}.hero p{font-size:12px}.stats{gap:8px;margin-bottom:24px}.stat{padding:13px}.stat strong{font-size:24px}.quickgrid,.twocol{grid-template-columns:1fr}.quick{min-height:0}.sectionhead{align-items:start}.sectionhead h2{font-size:19px}.two{grid-template-columns:1fr 1fr}.cardpad{padding:16px}.thumbgrid{gap:8px}.thumb{padding:10px}.footer{padding-bottom:10px;flex-direction:column}.topright .status{display:none}}
-@media(max-width:380px){.two{grid-template-columns:1fr}.nav button{font-size:8px}.hero h1{font-size:34px}}
-</style>
-</head>
-<body>
-<div class="app">
-<aside class="sidebar">
-  <a class="brand" href="#" onclick="showView('dashboard');return false"><span class="brandmark">S</span><span class="brandname">SPYQOR<small>CREATOR STUDIO</small></span></a>
-  <div class="navlabel">WORKSPACE</div>
-  <nav class="nav" aria-label="Main navigation">
-    <button class="active" data-view="dashboard" onclick="showView('dashboard')"><span class="ico">⌂</span>Dashboard</button>
-    <button data-view="ideas" onclick="showView('ideas')"><span class="ico">✳</span>AI Idea Lab</button>
-    <button data-view="thumbnails" onclick="showView('thumbnails')"><span class="ico">▧</span>Thumbnail Lab</button>
-    <button data-view="seo" onclick="showView('seo')"><span class="ico">⌕</span>SEO Toolkit</button>
-    <button data-view="planner" onclick="showView('planner')"><span class="ico">▦</span>Content Planner</button>
-    <button data-view="saved" onclick="showView('saved')"><span class="ico">♡</span>Saved Ideas <span id="savedCount" style="margin-left:auto;color:var(--cyan)">0</span></button>
-  </nav>
-  <div class="sidebottom"><strong>✦ Creator mode</strong><p>Turn one video idea into a complete upload plan: title, hook, thumbnail and SEO.</p><button onclick="showView('ideas')">Create an idea ↗</button></div>
-</aside>
-<main class="main">
-<header class="topbar"><div class="crumb">Workspace / <b id="crumbTitle">Dashboard</b></div><div class="topright"><span class="status">● BROWSER TOOLS READY</span><div class="avatar">SQ</div></div></header>
+from pathlib import Path
 
-<section class="view active" id="view-dashboard">
-<div class="hero"><span class="eyebrow">✦ YOUR YOUTUBE GROWTH WORKSPACE</span><h1>Make your next video<br><span class="gradient">impossible to ignore.</span></h1><p>Fresh video angles, clickable title ideas, thumbnail concepts, opening hooks and SEO — built for creators who want to plan smarter, not guess.</p><div class="heroactions"><button class="btn mint" onclick="showView('ideas')">✳ Generate today's ideas</button><button class="btn secondary" onclick="showView('thumbnails')">▧ Build thumbnail concepts</button></div></div>
-<div class="stats">
-<div class="stat"><div class="top"><span>IDEA WORKSPACE</span><span>✳</span></div><strong id="statIdeas">0</strong><small>Ideas saved in this browser</small></div>
-<div class="stat"><div class="top"><span>CONTENT TOOLS</span><span>⌘</span></div><strong>06</strong><small>Creator workflows</small></div>
-<div class="stat"><div class="top"><span>FORMAT OPTIONS</span><span>▤</span></div><strong>04</strong><small>Long, Shorts, live, community</small></div>
-<div class="stat"><div class="top"><span>YOUR WORKSPACE</span><span>◈</span></div><strong>24/7</strong><small>Works in your browser</small></div>
-</div>
-<div class="sectionhead"><div><h2>Pick your next move</h2><p>Focused tools for every stage of your upload.</p></div></div>
-<div class="quickgrid">
-<article class="card quick"><div class="qico">✳</div><h3>AI Idea Lab</h3><p>Generate trading, gaming or general YouTube video angles, title variations and hooks.</p><button onclick="showView('ideas')">Open Idea Lab ↗</button></article>
-<article class="card quick"><div class="qico">▧</div><h3>Thumbnail Lab</h3><p>Get visual directions, short thumbnail text and prompts for image-generation tools.</p><button onclick="showView('thumbnails')">Design a concept ↗</button></article>
-<article class="card quick"><div class="qico">⌕</div><h3>SEO Toolkit</h3><p>Build a description, keyword list, hashtags and an upload checklist.</p><button onclick="showView('seo')">Prepare SEO ↗</button></article>
-<article class="card quick"><div class="qico">▦</div><h3>Content Planner</h3><p>Build a seven-day publishing plan and keep your channel consistent.</p><button onclick="showView('planner')">Plan a week ↗</button></article>
-<article class="card quick"><div class="qico">♡</div><h3>Saved Ideas</h3><p>Keep promising ideas in this browser so you can revisit them later.</p><button onclick="showView('saved')">View saved ideas ↗</button></article>
-<article class="card quick"><div class="qico">⚡</div><h3>Hook & Script Starter</h3><p>Turn a topic into a first-15-seconds hook and a practical video outline.</p><button onclick="showView('ideas');document.getElementById('format').value='Long video'">Write a hook ↗</button></article>
-</div>
-<div class="sectionhead"><div><h2>Today's creator routine</h2><p>A repeatable workflow, without promising viral results.</p></div></div>
-<div class="card cardpad"><div class="idea-row"><div class="day">01</div><div><strong>Choose one clear viewer problem</strong><p>Pick a topic your audience actively wants to understand or experience.</p></div></div><div class="idea-row"><div class="day">02</div><div><strong>Package it with a strong title and thumbnail</strong><p>Make the promise specific, accurate and easy to understand on mobile.</p></div></div><div class="idea-row"><div class="day">03</div><div><strong>Deliver the promise fast</strong><p>Use a strong opening, remove filler and review retention after publishing.</p></div></div></div>
+src = Path("/mnt/data/SPYQOR-Interactive-Motion.html")
+html = src.read_text(encoding="utf-8")
+
+agent_css = r"""
+/* SPYQOR AI Guide */
+#spyqor-agent-launcher{position:fixed;right:22px;bottom:22px;z-index:9998;border:0;border-radius:999px;padding:13px 18px;background:linear-gradient(135deg,#b8a0ff,#7c5cff);color:#fff;font-weight:800;letter-spacing:.2px;box-shadow:0 12px 35px #7c5cff55;cursor:pointer;display:flex;align-items:center;gap:10px;transition:transform .2s,box-shadow .2s}
+#spyqor-agent-launcher:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 42px #7c5cff77}
+#spyqor-agent-launcher .agent-spark{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#ffffff25;font-size:17px}
+#spyqor-agent-panel{position:fixed;right:22px;bottom:86px;z-index:9999;width:min(380px,calc(100vw - 28px));height:min(570px,calc(100vh - 120px));display:none;flex-direction:column;overflow:hidden;border:1px solid #8b78d955;border-radius:22px;background:rgba(13,15,30,.97);color:#f7f5ff;box-shadow:0 24px 80px #0009;backdrop-filter:blur(22px);font-family:inherit}
+#spyqor-agent-panel.open{display:flex;animation:agentPop .22s ease-out}
+@keyframes agentPop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+#spyqor-agent-header{padding:16px;display:flex;align-items:center;gap:11px;border-bottom:1px solid #ffffff14;background:linear-gradient(110deg,#8a68ff24,#35d8c51a)}
+#spyqor-agent-avatar{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,#bca7ff,#7554f5);font-size:21px;box-shadow:0 5px 20px #7c5cff55}
+#spyqor-agent-heading{flex:1;min-width:0}
+#spyqor-agent-heading strong{display:block;font-size:14px}
+#spyqor-agent-heading span{display:block;font-size:11px;opacity:.7;margin-top:3px}
+#spyqor-agent-close{border:0;background:#ffffff12;color:inherit;width:32px;height:32px;border-radius:10px;cursor:pointer;font-size:19px}
+#spyqor-agent-messages{flex:1;overflow:auto;padding:15px;display:flex;flex-direction:column;gap:11px;scroll-behavior:smooth}
+.agent-msg{max-width:90%;padding:11px 13px;border-radius:15px;font-size:13px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere}
+.agent-msg.bot{align-self:flex-start;background:#ffffff0d;border:1px solid #ffffff12;border-bottom-left-radius:5px}
+.agent-msg.user{align-self:flex-end;background:linear-gradient(135deg,#8062f3,#6845db);border-bottom-right-radius:5px}
+.agent-msg strong{font-weight:800}
+#spyqor-agent-chips{display:flex;gap:7px;flex-wrap:wrap;padding:0 14px 12px}
+.agent-chip{border:1px solid #9a83ff55;background:#8d70ff12;color:#ded5ff;border-radius:999px;padding:7px 10px;font-size:11px;cursor:pointer}
+.agent-chip:hover{background:#8d70ff2c}
+#spyqor-agent-form{display:flex;gap:8px;padding:12px;border-top:1px solid #ffffff15;background:#090b16}
+#spyqor-agent-input{min-width:0;flex:1;border:1px solid #ffffff1c;border-radius:13px;padding:12px;background:#ffffff09;color:#fff;outline:none;font:inherit;font-size:13px}
+#spyqor-agent-input:focus{border-color:#9b83ff}
+#spyqor-agent-send{border:0;border-radius:12px;padding:0 15px;background:#8b6cff;color:#fff;font-weight:800;cursor:pointer}
+#spyqor-agent-note{font-size:10px;opacity:.48;text-align:center;padding:0 10px 10px}
+@media(max-width:480px){#spyqor-agent-launcher{right:14px;bottom:14px;padding:11px 14px}#spyqor-agent-panel{right:8px;bottom:72px;width:calc(100vw - 16px);height:min(600px,calc(100vh - 90px));border-radius:18px}}
+@media(prefers-reduced-motion:reduce){#spyqor-agent-panel.open{animation:none}#spyqor-agent-launcher{transition:none}}
+"""
+
+agent_html = r"""
+<button id="spyqor-agent-launcher" type="button" aria-label="Open SPYQOR AI Guide">
+  <span class="agent-spark">✦</span><span>Ask SPYQOR AI</span>
+</button>
+<section id="spyqor-agent-panel" role="dialog" aria-label="SPYQOR AI Guide" aria-modal="false">
+  <header id="spyqor-agent-header">
+    <div id="spyqor-agent-avatar">✦</div>
+    <div id="spyqor-agent-heading"><strong>SPYQOR AI Guide</strong><span>Creator assistant · Ready to help</span></div>
+    <button id="spyqor-agent-close" type="button" aria-label="Close chat">×</button>
+  </header>
+  <div id="spyqor-agent-messages" aria-live="polite">
+    <div class="agent-msg bot">Hey creator! 👋 I’m your SPYQOR guide. I can help you find video ideas, improve titles, plan thumbnails, and use the tools on this website.\n\nWhat are you creating today?</div>
+  </div>
+  <div id="spyqor-agent-chips">
+    <button class="agent-chip" type="button" data-prompt="Give me viral gaming video ideas">🎮 Video ideas</button>
+    <button class="agent-chip" type="button" data-prompt="Help me improve my YouTube title and SEO">🚀 Title & SEO</button>
+    <button class="agent-chip" type="button" data-prompt="Guide me to make a thumbnail">🖼️ Thumbnail</button>
+    <button class="agent-chip" type="button" data-prompt="Make me a weekly content plan">📅 Content plan</button>
+  </div>
+  <form id="spyqor-agent-form">
+    <input id="spyqor-agent-input" type="text" autocomplete="off" placeholder="Ask how to grow your channel…" aria-label="Message SPYQOR AI">
+    <button id="spyqor-agent-send" type="submit">Send</button>
+  </form>
+  <div id="spyqor-agent-note">Built-in guide · Responses are preset, not live generative AI</div>
 </section>
+"""
 
-<section class="view" id="view-ideas">
-<div class="sectionhead" style="margin-top:5px"><div><span class="eyebrow">✳ IDEA GENERATOR</span><h2 style="margin-top:15px">AI Idea Lab</h2><p>Generate title concepts, hooks and a video outline tailored to your niche.</p></div></div>
-<div class="generator-layout">
-<div class="card cardpad"><h3 class="cardtitle">Tell us what you're creating</h3><p class="sub">This version uses built-in templates in your browser. Connect a secure AI backend for live model responses.</p>
-<div class="field"><label for="niche">Channel niche</label><select id="niche"><option value="Trading">Trading & stock market</option><option value="Gaming">Gaming / Free Fire</option><option value="Tech">Tech & gadgets</option><option value="Education">Education</option><option value="Fitness">Fitness</option><option value="Lifestyle">Lifestyle</option><option value="General">General YouTube</option></select></div>
-<div class="field"><label for="topic">Video topic / keyword</label><input id="topic" placeholder="e.g. support and resistance, rank push..." value="Trading for beginners"></div>
-<div class="two"><div class="field"><label for="format">Video format</label><select id="format"><option>Long video</option><option>YouTube Shorts</option><option>Live stream</option><option>Community post</option></select></div><div class="field"><label for="language">Language</label><select id="language"><option>Hinglish</option><option>Hindi</option><option>English</option></select></div></div>
-<div class="field"><label for="style">Title style</label><select id="style"><option value="curiosity">Curiosity gap</option><option value="educational">Educational / searchable</option><option value="challenge">Challenge / experiment</option><option value="story">Story / case study</option><option value="bold">Bold but accurate</option></select></div>
-<div class="field"><label for="audience">Target viewer (optional)</label><input id="audience" placeholder="e.g. absolute beginners"></div>
-<button class="btn mint" style="width:100%" onclick="generateIdeas()">✳ Generate 8 title ideas</button>
-<div class="notice">Trading content tip: avoid guaranteed-profit claims. Keep titles educational, factual and clear about risk.</div>
-</div>
-<div class="card cardpad"><div class="resulthead"><h3>Generated concepts</h3><span id="resultCount">Waiting for your first run</span></div><div id="ideaResults" class="resultlist"><div class="savedempty">Your title ideas will appear here.<br>Start with a topic on the left.</div></div>
-<div class="sectionhead"><div><h2 style="font-size:16px">Opening hook + outline</h2><p>Use this as a draft, then make it your own.</p></div><button class="textlink" onclick="copyText(document.getElementById('hookText').innerText)">Copy hook</button></div>
-<div class="resultitem"><div class="number">FIRST 10–15 SECONDS</div><p id="hookText">Enter a topic and generate ideas to create a matching opening hook.</p></div><div class="resultitem"><div class="number">VIDEO STRUCTURE</div><p id="outlineText">1. State the viewer problem. 2. Explain the core idea. 3. Show an example. 4. Share limitations or mistakes. 5. Summarize and invite discussion.</p></div>
-</div></div>
-</section>
-
-<section class="view" id="view-thumbnails">
-<div class="sectionhead" style="margin-top:5px"><div><span class="eyebrow">▧ VISUAL PACKAGING</span><h2 style="margin-top:15px">Thumbnail Lab</h2><p>Preview concepts, edit thumbnail text and copy an image-generation prompt.</p></div></div>
-<div class="generator-layout">
-<div class="card cardpad"><h3 class="cardtitle">Build a thumbnail direction</h3><p class="sub">These are editable visual mockups, not exported image files.</p>
-<div class="field"><label for="thumbTopic">Video topic</label><input id="thumbTopic" value="Trading mistakes" placeholder="Enter your video topic"></div>
-<div class="field"><label for="thumbText">Thumbnail text (keep it short)</label><input id="thumbText" value="STOP LOSING!" maxlength="34"></div>
-<div class="field"><label for="thumbMood">Visual style</label><select id="thumbMood"><option value="neon purple and cyan">Neon purple + cyan</option><option value="red and black high contrast">Red + black high contrast</option><option value="green finance dashboard">Green finance dashboard</option><option value="clean minimal white and blue">Clean minimal white + blue</option></select></div>
-<button class="btn mint" style="width:100%" onclick="buildThumbnails()">Update thumbnail concepts</button>
-<button class="btn secondary" style="width:100%;margin-top:9px" onclick="copyThumbnailPrompt()">Copy AI image prompt</button>
-</div>
-<div class="card cardpad"><div class="resulthead"><h3>Concept previews</h3><span>16:9 layout</span></div><div class="thumbgrid" id="thumbGrid"><div class="thumb"><small>SPYQOR • CONCEPT 01</small><strong>STOP LOSING!</strong><em>High contrast / bold typography</em></div><div class="thumb"><small>SPYQOR • CONCEPT 02</small><strong>STOP LOSING!</strong><em>Curiosity / expressive layout</em></div><div class="thumb"><small>SPYQOR • CONCEPT 03</small><strong>STOP LOSING!</strong><em>Clean / topic-first</em></div><div class="thumb"><small>SPYQOR • CONCEPT 04</small><strong>STOP LOSING!</strong><em>Bold / minimal text</em></div></div><div class="sectionhead"><div><h2 style="font-size:16px">Image prompt</h2><p>Copy this into your preferred image generator.</p></div></div><div class="resultitem"><p id="thumbPrompt">Create a 16:9 YouTube thumbnail about trading mistakes, bold readable text, strong contrast, clean composition.</p><div class="itemactions"><button class="mini" onclick="copyThumbnailPrompt()">Copy prompt</button><button class="mini" onclick="saveCurrent('Thumbnail prompt: '+document.getElementById('thumbPrompt').innerText)">Save prompt</button></div></div></div>
-</div>
-</section>
-
-<section class="view" id="view-seo">
-<div class="sectionhead" style="margin-top:5px"><div><span class="eyebrow">⌕ SEARCH OPTIMIZATION</span><h2 style="margin-top:15px">SEO Toolkit</h2><p>Draft a description, keyword ideas and hashtags for your upload.</p></div></div>
-<div class="generator-layout">
-<div class="card cardpad"><h3 class="cardtitle">Video details</h3><p class="sub">Enter a clear topic to make a usable upload draft.</p>
-<div class="field"><label for="seoTopic">Main video topic</label><input id="seoTopic" value="Trading for beginners" placeholder="Video topic"></div>
-<div class="field"><label for="seoChannel">Channel name (optional)</label><input id="seoChannel" value="SPYQOR" placeholder="Your channel name"></div>
-<div class="field"><label for="seoLanguage">Description language</label><select id="seoLanguage"><option>Hinglish</option><option>Hindi</option><option>English</option></select></div>
-<button class="btn mint" style="width:100%" onclick="generateSEO()">Generate SEO pack</button>
-</div>
-<div class="card cardpad"><div class="resulthead"><h3>Your upload pack</h3><button class="mini" onclick="copyText(getSEOText())">Copy all</button></div>
-<div class="field"><label for="seoTitle">Suggested title</label><input id="seoTitle" value="" placeholder="Generated title appears here"></div>
-<div class="field"><label for="seoDescription">Video description</label><textarea id="seoDescription" placeholder="Generated description appears here"></textarea></div>
-<div class="field"><label>Keyword ideas</label><div id="seoTags" class="taglist"><span class="tag">Generate to see keyword ideas</span></div></div>
-<div class="field"><label>Hashtags</label><div id="seoHashtags" class="taglist"><span class="tag">#YouTube</span></div></div>
-<div class="checkrow"><input type="checkbox" id="checkTitle"><label for="checkTitle">Title accurately reflects the video</label></div><div class="checkrow"><input type="checkbox" id="checkDesc"><label for="checkDesc">Description and links checked</label></div><div class="checkrow"><input type="checkbox" id="checkThumb"><label for="checkThumb">Thumbnail readable on mobile</label></div><div class="checkrow"><input type="checkbox" id="checkRights"><label for="checkRights">Music, footage and image rights checked</label></div>
-</div></div>
-</section>
-
-<section class="view" id="view-planner">
-<div class="sectionhead" style="margin-top:5px"><div><span class="eyebrow">▦ CONSISTENCY SYSTEM</span><h2 style="margin-top:15px">Content Planner</h2><p>Generate a weekly plan from your niche and topic, then save it in this browser.</p></div></div>
-<div class="generator-layout">
-<div class="card cardpad"><h3 class="cardtitle">Plan your week</h3><div class="field"><label for="planNiche">Niche</label><select id="planNiche"><option>Trading</option><option>Gaming / Free Fire</option><option>Tech</option><option>Education</option><option>Fitness</option><option>General YouTube</option></select></div><div class="field"><label for="planTopic">Main theme</label><input id="planTopic" value="Beginner tips" placeholder="e.g. new season update"></div><div class="field"><label for="planFrequency">Publishing pace</label><select id="planFrequency"><option value="balanced">Balanced: 3 videos + 4 shorts</option><option value="shorts">Shorts-focused: 7 shorts</option><option value="long">Long-form: 3 videos</option></select></div><button class="btn mint" style="width:100%" onclick="generatePlan()">Create 7-day plan</button></div>
-<div class="card cardpad"><div class="resulthead"><h3>Your publishing week</h3><button class="mini" onclick="savePlan()">Save plan</button></div><div id="planResults"><div class="savedempty">Your 7-day plan will appear here.</div></div></div>
-</div>
-</section>
-
-<section class="view" id="view-saved">
-<div class="sectionhead" style="margin-top:5px"><div><span class="eyebrow">♡ YOUR LIBRARY</span><h2 style="margin-top:15px">Saved Ideas</h2><p>Saved items stay in this browser on this device.</p></div><button class="btn danger" onclick="clearSaved()">Clear all</button></div>
-<div class="card cardpad"><div class="resulthead"><h3>Your saved workspace</h3><span id="savedSummary">0 items</span></div><div id="savedResults"><div class="savedempty">Nothing saved yet. Generate an idea and press Save.</div></div></div>
-</section>
-
-<footer class="footer"><span>© <span id="year"></span> SPYQOR Creator Studio</span><span>Browser-based creator toolkit • Ideas are drafts, not guarantees.</span></footer>
-</main></div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+agent_js = r"""
 <script>
-'use strict';
-const $ = id => document.getElementById(id);
-const STORAGE_KEY = 'spyqor_creator_studio_saved_v1';
-let currentIdeas = [];
-let currentPlan = [];
-
-function showView(name){
-  const target = $('view-'+name);
-  if(!target) return;
-  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
-  target.classList.add('active');
-  document.querySelectorAll('.nav button[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===name));
-  const names={dashboard:'Dashboard',ideas:'AI Idea Lab',thumbnails:'Thumbnail Lab',seo:'SEO Toolkit',planner:'Content Planner',saved:'Saved Ideas'};
-  $('crumbTitle').textContent=names[name]||'Workspace';
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-let toastTimer;
-function toast(message){
-  const el=$('toast'); el.textContent=message; el.classList.add('show');
-  clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('show'),2400);
-}
-function cleanText(s){return String(s||'').trim().replace(/\s+/g,' ')}
-function safeTopic(){return cleanText($('topic').value)||'your next video'}
-function langPrefix(){const l=$('language').value;return l==='Hindi'?'':l==='Hinglish'?'': ''}
-function titleTemplates(topic,niche,style,format,audience){
- const t=topic, a=audience?` for ${audience}`:'';
- let templates;
- if(niche==='Trading') templates=[
-  ` ${t}: Beginner Mistakes You Should Avoid${a}`,
-  `I Explained ${t} in Simple Steps`,
-  `${t} Explained: What New Traders Often Miss`,
-  `5 Things I Wish I Knew About ${t}`,
-  `Can You Understand ${t} in 10 Minutes?`,
-  `${t}: A Practical Step-by-Step Guide`,
-  `Before You Try ${t}, Watch This`,
-  `The Truth About ${t}: Benefits, Risks & Mistakes`
- ];
- else if(niche==='Gaming') templates=[
-  `${t}: The Strategy I’d Try First${a}`,`I Tested a New Way to Play ${t}`,`5 Mistakes to Avoid in ${t}`,`${t} Tips That Can Improve Your Gameplay`,`Can This ${t} Challenge Actually Work?`,`The Complete Beginner Guide to ${t}`,`Things I Wish I Knew Before ${t}`,`${t}: Smart Plays vs Common Mistakes`
- ];
- else if(niche==='Tech') templates=[
-  `${t}: What You Need to Know Before Buying`,`I Tested ${t}: Pros, Cons & Verdict`,`The Beginner’s Guide to ${t}`,`5 Features of ${t} Worth Knowing`,`Is ${t} Right for You?`,`How to Set Up ${t} Step by Step`,`Hidden Details About ${t}`,`${t}: What Reviews Often Leave Out`
- ];
- else templates=[
-  `${t}: A Beginner-Friendly Guide${a}`,`I Tried Learning ${t} — Here’s the Plan`,`5 Common ${t} Mistakes to Avoid`,`What I Wish I Knew About ${t}`,`${t} Explained in Simple Steps`,`A Practical ${t} Challenge for 7 Days`,`The Truth About ${t}: What Matters Most`,`Start Here: Your ${t} Roadmap`
- ];
- if(style==='educational') templates=[`${t} Explained Step by Step`,`${t}: Complete Beginner Guide`,`How to Get Started With ${t}`,`5 Key Things to Know About ${t}`,`${t}: Examples, Tips and Common Mistakes`,...templates.slice(5)];
- if(style==='challenge') templates=[`I Tried ${t} for 7 Days`,`Can I Improve at ${t} in One Week?`,`The ${t} Challenge: What I Learned`,...templates.slice(3)];
- if(style==='story') templates=[`What Happened When I Tried ${t}`,`The Story Behind ${t}`,`Lessons I Learned From ${t}`,...templates.slice(3)];
- if(style==='bold') templates=[`Stop Making These ${t} Mistakes`,`What Most Beginners Miss About ${t}`,`${t}: The Details That Matter`,...templates.slice(3)];
- if(format==='YouTube Shorts') templates=templates.map(x=>x.length>58?x.slice(0,55).trim()+'…':x);
- return templates.slice(0,8).map(x=>x.trim());
-}
-function generateIdeas(){
- const topic=safeTopic(), niche=$('niche').value, style=$('style').value, format=$('format').value, audience=cleanText($('audience').value);
- currentIdeas=titleTemplates(topic,niche,style,format,audience);
- const box=$('ideaResults');box.innerHTML='';
- currentIdeas.forEach((title,i)=>{
-  const item=document.createElement('article');item.className='resultitem';
-  const num=document.createElement('div');num.className='number';num.textContent='TITLE CONCEPT '+String(i+1).padStart(2,'0');
-  const p=document.createElement('p');p.textContent=title;
-  const actions=document.createElement('div');actions.className='itemactions';
-  const save=document.createElement('button');save.className='mini';save.textContent='♡ Save idea';save.onclick=()=>saveCurrent(title,'Title idea');
-  const copy=document.createElement('button');copy.className='mini';copy.textContent='Copy title';copy.onclick=()=>copyText(title);
-  const creator=document.createElement('button');creator.className='mini';creator.textContent='Use for SEO';creator.onclick=()=>{$('seoTopic').value=topic;$('seoTitle').value=title;showView('seo');generateSEO();$('seoTitle').value=title;};
-  actions.append(save,copy,creator);item.append(num,p,actions);box.append(item);
- });
- $('resultCount').textContent=currentIdeas.length+' concepts created';
- $('hookText').textContent=`“If ${topic} has ever felt confusing, this video is for you. I’ll break it into clear steps, show a practical example, and point out the mistakes worth avoiding.”`;
- $('outlineText').textContent=`1. Quick promise: what viewers will learn about ${topic}. 2. Explain the basics in plain language. 3. Demonstrate one example. 4. Cover common mistakes and limitations. 5. Recap the key takeaways and ask viewers what they want next.`;
- toast('8 title ideas generated');
-}
-function getSaved(){
- try{const value=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');return Array.isArray(value)?value:[]}catch(e){return[]}
-}
-function setSaved(items){
- try{localStorage.setItem(STORAGE_KEY,JSON.stringify(items));renderSaved();return true}catch(e){toast('Browser storage unavailable. Copy your item instead.');return false}
-}
-function saveCurrent(text,type='Idea'){
- const item={id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),text:cleanText(text),type,created:new Date().toISOString()};
- const items=getSaved();items.unshift(item);
- if(setSaved(items))toast('Saved to your browser');
-}
-function removeSaved(id){setSaved(getSaved().filter(x=>x.id!==id));toast('Saved item removed')}
-function clearSaved(){
- if(!getSaved().length){toast('Your saved list is already empty');return}
- if(confirm('Delete all saved items from this browser?')){setSaved([]);toast('Saved items cleared')}
-}
-function renderSaved(){
- const items=getSaved();$('savedCount').textContent=items.length;$('statIdeas').textContent=items.length;$('savedSummary').textContent=items.length+' item'+(items.length===1?'':'s');
- const box=$('savedResults');box.innerHTML='';
- if(!items.length){box.innerHTML='<div class="savedempty">Nothing saved yet. Generate an idea and press Save.</div>';return}
- items.forEach(item=>{
-  const row=document.createElement('article');row.className='resultitem';
-  const label=document.createElement('div');label.className='number';label.textContent=(item.type||'IDEA').toUpperCase()+' • '+new Date(item.created).toLocaleDateString();
-  const p=document.createElement('p');p.textContent=item.text;
-  const actions=document.createElement('div');actions.className='itemactions';
-  const copy=document.createElement('button');copy.className='mini';copy.textContent='Copy';copy.onclick=()=>copyText(item.text);
-  const del=document.createElement('button');del.className='mini';del.textContent='Delete';del.onclick=()=>removeSaved(item.id);
-  actions.append(copy,del);row.append(label,p,actions);box.append(row);
- });
-}
-async function copyText(text){
- text=String(text||'').trim();if(!text){toast('Nothing to copy');return}
- try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text)}else{const area=document.createElement('textarea');area.value=text;area.style.position='fixed';area.style.opacity='0';document.body.append(area);area.select();const ok=document.execCommand('copy');area.remove();if(!ok)throw new Error('copy failed')}toast('Copied to clipboard')}
- catch(e){window.prompt('Copy this text:',text)}
-}
-function buildThumbnails(){
- const topic=cleanText($('thumbTopic').value)||'your video topic';
- const text=cleanText($('thumbText').value)||topic;
- const mood=$('thumbMood').value;
- const captions=['BOLD HOOK / HIGH CONTRAST','CURIOSITY / BIG TYPOGRAPHY','CLEAN / TOPIC FIRST','MINIMAL / STRONG FOCUS'];
- const grid=$('thumbGrid');grid.innerHTML='';
- for(let i=0;i<4;i++){
-  const thumb=document.createElement('div');thumb.className='thumb';
-  const small=document.createElement('small');small.textContent='SPYQOR • CONCEPT 0'+(i+1);
-  const strong=document.createElement('strong');strong.textContent=text;
-  const em=document.createElement('em');em.textContent=captions[i];
-  thumb.append(small,strong,em);grid.append(thumb);
- }
- $('thumbPrompt').textContent=`Design a polished 16:9 YouTube thumbnail for a video about "${topic}". Use a ${mood} palette, strong visual hierarchy, one clear focal subject, dramatic but clean lighting, readable mobile-first composition, and very large exact text "${text}". Keep the design uncluttered, high contrast, professional, no fake logos, no misleading claims.`;
- toast('Thumbnail concepts updated');
-}
-function copyThumbnailPrompt(){copyText($('thumbPrompt').innerText)}
-function keywordize(s){return [...new Set(s.toLowerCase().split(/[^a-z0-9]+/i).filter(x=>x.length>2))]}
-function generateSEO(){
- const topic=cleanText($('seoTopic').value)||'YouTube tips';
- const channel=cleanText($('seoChannel').value)||'';
- const language=$('seoLanguage').value;
- const title=`${topic}: Complete Beginner-Friendly Guide`;
- $('seoTitle').value=title;
- let description;
- if(language==='Hindi')description=`इस वीडियो में हम ${topic} को आसान भाषा में समझेंगे। आपको मुख्य बातें, उपयोगी सुझाव और आम गलतियों के बारे में जानने को मिलेगा।\n\nवीडियो पसंद आए तो Like करें, सवाल Comment में पूछें और ऐसे ही वीडियो के लिए Subscribe करें.${channel?'\n\nChannel: '+channel:''}\n\nनोट: यह जानकारी सामान्य शैक्षिक उद्देश्य के लिए है।`;
- else if(language==='English')description=`In this video, we break down ${topic} in a clear, beginner-friendly way. Learn the key ideas, practical tips, and common mistakes to watch out for.\n\nIf this helped, leave a comment with your question, like the video, and subscribe for more.${channel?'\n\nChannel: '+channel:''}\n\nNote: This content is for general educational purposes.`;
- else description=`Is video mein hum ${topic} ko simple Hinglish mein explain karenge — important points, practical tips aur common mistakes ke saath.\n\nVideo helpful lage to Like karein, apna question Comment karein aur aise hi content ke liye Subscribe karein.${channel?'\n\nChannel: '+channel:''}\n\nNote: Content general educational purpose ke liye hai.`;
- $('seoDescription').value=description;
- const base=keywordize(topic), extra=['beginner guide','tips','explained','how to','tutorial','mistakes','Hindi','Hinglish','step by step'];
- const tags=[...new Set([...base,...extra.map(x=>x.toLowerCase())])].slice(0,12);
- $('seoTags').innerHTML='';tags.forEach(tag=>{const s=document.createElement('span');s.className='tag';s.textContent=tag;$('seoTags').append(s)});
- const hashtags=[...new Set(['#'+(base[0]||'YouTube').replace(/[^a-z0-9]/gi,''),'#YouTube','#Tutorial','#Beginners'])];
- $('seoHashtags').innerHTML='';hashtags.forEach(tag=>{const s=document.createElement('span');s.className='tag';s.textContent=tag;$('seoHashtags').append(s)});
- toast('SEO pack generated');
-}
-function getSEOText(){
- return `TITLE\n${$('seoTitle').value}\n\nDESCRIPTION\n${$('seoDescription').value}\n\nKEYWORDS\n${[...$('seoTags').querySelectorAll('.tag')].map(x=>x.textContent).join(', ')}\n\nHASHTAGS\n${[...$('seoHashtags').querySelectorAll('.tag')].map(x=>x.textContent).join(' ')}`;
-}
-function generatePlan(){
- const niche=$('planNiche').value,topic=cleanText($('planTopic').value)||'channel tips',freq=$('planFrequency').value;
- const ideas=freq==='shorts'?['Quick tip','Common mistake','One-minute tutorial','Myth vs fact','Before you start','3 fast tips','Viewer Q&A']:freq==='long'?['Beginner guide','Deep-dive tutorial','Mistakes and lessons','']:['Beginner guide','Quick tip','Common mistakes','Myth vs fact','Step-by-step tutorial','Behind the scenes','Viewer Q&A'];
- currentPlan=ideas.map((idea,i)=>({day:['MON','TUE','WED','THU','FRI','SAT','SUN'][i],format:freq==='shorts'?'Short':freq==='long'?(i%2===0?'Long video':'Community post'):(i%2===0?'Long video':'Short'),title:`${topic}: ${idea} (${niche})`}));
- if(freq==='long')currentPlan=currentPlan.filter(x=>x.title.trim().endsWith(')')).slice(0,7);
- renderPlan();toast('7-day plan created');
-}
-function renderPlan(){
- const box=$('planResults');box.innerHTML='';
- if(!currentPlan.length){box.innerHTML='<div class="savedempty">Create a plan to see it here.</div>';return}
- currentPlan.forEach((p,i)=>{
-  const row=document.createElement('div');row.className='idea-row';
-  const day=document.createElement('div');day.className='day';day.textContent=p.day;
-  const body=document.createElement('div');const strong=document.createElement('strong');strong.textContent=p.title;const para=document.createElement('p');para.textContent=p.format;
-  const actions=document.createElement('div');actions.className='itemactions';actions.style.marginTop='8px';
-  const save=document.createElement('button');save.className='mini';save.textContent='Save idea';save.onclick=()=>saveCurrent(p.title,p.format);
-  const copy=document.createElement('button');copy.className='mini';copy.textContent='Copy';copy.onclick=()=>copyText(p.title);
-  actions.append(save,copy);body.append(strong,para,actions);row.append(day,body);box.append(row);
- });
-}
-function savePlan(){if(!currentPlan.length){toast('Create a plan first');return}currentPlan.forEach(p=>saveCurrent(p.title,p.format));toast('Plan items saved')}
-function init(){
- $('year').textContent=new Date().getFullYear();renderSaved();
- // Generate starter outputs so the tools are demonstrably interactive on first open.
- buildThumbnails();generateSEO();
-}
-document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();toast('Use the Save buttons to store ideas in this browser.')}});
-init();
+(function(){
+  const launcher=document.getElementById('spyqor-agent-launcher');
+  const panel=document.getElementById('spyqor-agent-panel');
+  const closeBtn=document.getElementById('spyqor-agent-close');
+  const form=document.getElementById('spyqor-agent-form');
+  const input=document.getElementById('spyqor-agent-input');
+  const messages=document.getElementById('spyqor-agent-messages');
+  if(!launcher||!panel||!form||!input||!messages)return;
+  function openAgent(){panel.classList.add('open');launcher.setAttribute('aria-expanded','true');setTimeout(()=>input.focus(),80);}
+  function closeAgent(){panel.classList.remove('open');launcher.setAttribute('aria-expanded','false');}
+  launcher.addEventListener('click',()=>panel.classList.contains('open')?closeAgent():openAgent());
+  closeBtn.addEventListener('click',closeAgent);
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAgent();});
+  function addMessage(text,who){
+    const el=document.createElement('div');el.className='agent-msg '+who;el.textContent=text;
+    messages.appendChild(el);messages.scrollTop=messages.scrollHeight;
+  }
+  function goToView(viewName){
+    if(typeof window.showView==='function'){window.showView(viewName);return true;}
+    const link=[...document.querySelectorAll('[onclick]')].find(el=>(el.getAttribute('onclick')||'').includes(viewName));
+    if(link){link.click();return true;}return false;
+  }
+  function replyFor(raw){
+    const q=raw.toLowerCase();
+    if(/hello|hi\b|hey\b|namaste|start/.test(q)) return "Hi! Tell me what you need: video ideas, titles/SEO, thumbnails, or a content schedule. I’ll point you to the right tool.";
+    if(/idea|viral|video topic|what should i (make|upload)|gaming/.test(q)){
+      goToView('ideas');
+      return "Let’s start with the AI Idea Lab. 🎮\\n\\nTry this workflow:\\n1. Pick one game or niche your audience already enjoys.\\n2. Make the idea specific: a challenge, a test, a comparison, or a first-time gameplay.\\n3. Give viewers a reason to stay until the end.\\n4. Use the Idea Lab to generate options, then choose the one you can record well.\\n\\nTip: no title or idea can guarantee virality—test and learn from your analytics.";
+    }
+    if(/thumbnail|thumb|image|cover/.test(q)){
+      goToView('thumbnails');
+      return "Open Thumbnail Lab. 🖼️\\n\\nA strong gaming thumbnail usually has one clear subject, high contrast, a readable 2–4 word phrase (or no text), and a visible moment of action. Keep it readable on a phone and make sure it accurately represents the video.";
+    }
+    if(/seo|title|tag|keyword|description|search/.test(q)){
+      goToView('seo');
+      return "Open SEO Toolkit. 🚀\\n\\nFor a stronger title: put the main game/topic early, promise one clear payoff, and avoid misleading claims. Use a natural description with the key topic near the beginning. Tags are secondary—viewer satisfaction, topic clarity, and the thumbnail/title combination matter more.";
+    }
+    if(/plan|schedule|calendar|weekly|upload|consisten/.test(q)){
+      goToView('planner');
+      return "Open Content Planner. 📅\\n\\nA simple starter schedule:\\n• 1–2 videos you can make consistently each week\\n• Record in batches when possible\\n• Leave time for editing and thumbnails\\n• Review retention and click-through data after publishing\\n\\nChoose a pace you can maintain alongside school or other commitments.";
+    }
+    if(/save|saved|idea list|bookmark/.test(q)){
+      goToView('saved');
+      return "Open Saved Ideas to revisit ideas you’ve saved. Keep a short shortlist and mark the next idea you can realistically record.";
+    }
+    if(/grow|subscriber|views|watch ?time|moneti[sz]|earn|algorithm/.test(q)){
+      return "For sustainable channel growth, focus on original videos that viewers choose to watch: a clear hook in the opening, no long unnecessary intro, good audio, and a payoff that matches the title. Study audience retention and click-through rate in YouTube Analytics. Avoid fake views, repeated tab playback, or artificial watch-time schemes—they can be invalidated and may put monetization at risk.";
+    }
+    if(/where|how to use|guide|help|feature|tool/.test(q)){
+      return "Here’s the quick tour:\\n• AI Idea Lab — brainstorm video concepts\\n• Thumbnail Lab — shape thumbnail concepts\\n• SEO Toolkit — refine titles and metadata\\n• Content Planner — organize uploads\\n• Saved Ideas — revisit saved concepts\\n\\nTell me which one you’re using and I’ll guide you step by step.";
+    }
+    return "I can help with video ideas, YouTube titles/SEO, thumbnail planning, content schedules, and creator growth basics. Try one of the quick buttons below, or ask a more specific question.\\n\\nNote: this offline version uses built-in responses; it doesn’t connect to a live AI model yet.";
+  }
+  function submitMessage(text){
+    const clean=(text||'').trim();if(!clean)return;
+    addMessage(clean,'user');input.value='';
+    const answer=replyFor(clean);
+    window.setTimeout(()=>addMessage(answer.replace(/\\n/g,'\n'),'bot'),180);
+  }
+  form.addEventListener('submit',e=>{e.preventDefault();submitMessage(input.value);});
+  panel.querySelectorAll('[data-prompt]').forEach(btn=>btn.addEventListener('click',()=>submitMessage(btn.getAttribute('data-prompt'))));
+})();
 </script>
-</body>
-</html>
+"""
+
+if "spyqor-agent-launcher" not in html:
+    html = html.replace("</head>", "<style>\n" + agent_css + "\n</style>\n</head>")
+    html = html.replace("</body>", agent_html + "\n" + agent_js + "\n</body>")
+out = Path("/mnt/data/SPYQOR-Interactive-Motion-AI-Guide.html")
+out.write_text(html, encoding="utf-8")
+print(f"Created: {out.name} ({out.stat().st_size:,} bytes)")
